@@ -12,8 +12,16 @@
       rel="stylesheet"
       type="text/css"
     />
-    <!-- Taiwind CSS cdn link -->
+    <!-- Taiwind CSS cdn links  -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        .hover:hover{
+            background-color: rgb(14, 82, 82);
+            color: white;
+            transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+        }
+    </style>
   </head>
   <body class="h-[100vh] bg-[#41FF6B1A]">
     <header>
@@ -47,7 +55,7 @@
       </div>
       <!-- Hero-Section -->
       <section
-        class="bg-gradient-to-b from-[#013223] via-[#006747] to-[#013223]    text-center py-8 px-3 text-white min-h-[50px]  hover:bg-green-800 cursor-pointer "
+        class="bg-gradient-to-b from-[#013223] via-[#006747] to-[#013223]    text-center py-8 px-3 text-white min-h-[50px]  hover:bg-green-800 cursor-pointer  hover"
       >
         <img src="./assets/logo-dark.png" class="w-14 mx-auto mb-3" />
         <h1 class="text-2xl md:text-3xl font-bold">জরুরি সেবা ডিরেক্টরি</h1>
@@ -61,15 +69,15 @@
       <div
         class="grid grid-cols-1 lg:grid-cols-3 gap-6 p-4 sm:p-6 max-w-xxl mx-auto"
       >
-        <!-- Cards Section -->
+        <!-- Cards Sectionss-->
         <div
           class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
         >
-          <!-- National Service -->
-          <div class="card bg-base-100 shadow p-4">
+          <!-- National Servicess -->
+          <div class="card bg-base-100 shadow p-4    hover">
             <div class="flex justify-between items-center">
               <div
-                class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
+                class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]  hover:bg-green-500"
               >
                 <img src="./assets/emergency.png" class="w-[20px]" alt="" />
               </div>
@@ -87,6 +95,8 @@
                 class="btn btn-sm bg-green-600 callBtn text-white callBtn hover:bg-green-800   w-20   rounded-xl  
                 data-name="জাতীয় জরুরি সেবা"
                 data-number="999"
+                 data-name="জরুরি সেবা"
+
 
 
                 
@@ -96,11 +106,11 @@
             </div>
           </div>
 
-          <!-- Police -->
-          <div class="card bg-base-100 shadow p-4">
+          <!-- Police  Section-->
+          <div class="card bg-base-100 shadow p-4 hover">
             <div class="flex justify-between items-center">
               <div
-                class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
+                class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-3xl"
               >
                 <img src="./assets/police.png" class="w-[20px]" alt="" />
               </div>
@@ -111,7 +121,7 @@
             <p class="text-2xl font-bold mb-3">999</p>
             <span class="badge bg-gray-100 my-2">পুলিশ</span>
             <div class="flex gap-2 flex-wrap">
-              <button class="btn btn-sm copyBtn" data-number="999">
+               <button class="btn btn-sm copyBtn  color w-20 hover:bg-green-800 hover:text-white " data-number="999">
                 <img src="./assets/copy.png" alt="" /> Copy
               </button>
               <button
@@ -125,7 +135,7 @@
           </div>
 
           <!-- Fire Service -->
-          <div class="card bg-base-100 shadow p-4">
+          <div class="card bg-base-100 shadow p-4 hover">
             <div class="flex justify-between items-center">
               <div
                 class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
@@ -139,7 +149,7 @@
             <p class="text-2xl font-bold mb-3">999</p>
             <span class="badge bg-gray-100 my-2">ফায়ার সার্ভিস</span>
             <div class="flex gap-2 flex-wrap">
-              <button class="btn btn-sm copyBtn" data-number="999">
+           <button class="btn btn-sm copyBtn  color w-20 hover:bg-green-800 hover:text-white " data-number="999">
                 <img src="./assets/copy.png" alt="" /> Copy
               </button>
               <button
@@ -155,7 +165,7 @@
           </div>
 
           <!-- Ambulance -->
-          <div class="card bg-base-100 shadow p-4">
+          <div class="card bg-base-100 shadow p-4 hover">
             <div class="flex justify-between items-center">
               <div
                 class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
@@ -166,16 +176,16 @@
             </div>
             <h2 class="text-lg font-bold mt-2">অ্যাম্বুলেন্স</h2>
             <p class="text-gray-400">Ambulance</p>
-            <p class="text-2xl font-bold mb-3">999</p>
+            <p class="text-2xl font-bold mb-3">01929222</p>
             <span class="badge bg-gray-100 my-2">অ্যাম্বুলেন্স</span>
             <div class="flex gap-2 flex-wrap">
-              <button class="btn btn-sm copyBtn" data-number="333">
+               <button class="btn btn-sm copyBtn  color w-20 hover:bg-green-800 hover:text-white " data-number="999">
                 <img src="./assets/copy.png" alt="" /> Copy
               </button>
               <button
                 class="btn btn-sm bg-green-600 callBtn text-white callBtn hover:bg-green-800   w-20   rounded-xl  "
                 data-name="অ্যাম্বুলেন্স"
-                data-number="08790"
+                data-number="1994-999999"
               >
                 <img src="./assets/call.png" alt="" />Call
               </button>
@@ -183,7 +193,7 @@
           </div>
 
           <!-- Baking-Service -->
-          <div class="card bg-base-100 shadow p-4">
+          <div class="card bg-base-100 shadow p-4 hover">
             <div class="flex justify-between items-center">
               <div
                 class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
@@ -193,16 +203,16 @@
               <button class="heartBtn text-xl">♡</button>
             </div>
             <h2 class="text-lg font-bold mt-2">ব্যাংকিং সেবা</h2>
-            <p class="text-gray-400">Banking Service</p>
-            <p class="text-2xl font-bold mb-3">999</p>
+            <p class="text-gray-400 ">Banking Service</p>
+            <p class="text-2xl font-bold mb-3">013088902</p>
             <span class="badge bg-gray-100 my-2">ব্যাংকিং</span>
             <div class="flex gap-2 flex-wrap">
-              <button class="btn btn-sm copyBtn" data-number="999">
+               <button class="btn btn-sm copyBtn  color w-20 hover:bg-green-800 hover:text-white " data-number="999">
                 <img src="./assets/copy.png" alt="" /> Copy
               </button>
               <button
                 class="btn btn-sm bg-green-600 callBtn text-white callBtn hover:bg-green-800   w-20   rounded-xl  "
-                data-name="ব্যাংকিং সেবা"
+                data-name="ব্যাংকিং সেবা "
                 data-number="999"
               >
                 <img src="./assets/call.png" alt="" />Call
@@ -211,7 +221,7 @@
           </div>
 
           <!-- Bangladesh-Railway -->
-          <div class="card bg-base-100 shadow p-4">
+          <div class="card bg-base-100 shadow p-4 hover">
             <div class="flex justify-between items-center">
               <div
                 class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
@@ -226,10 +236,10 @@
             </div>
             <h2 class="text-lg font-bold mt-2">জাতীয় রেলসেবা</h2>
             <p class="text-gray-400">Bangladesh-Railway</p>
-            <p class="text-2xl font-bold mb-3">999</p>
+            <p class="text-2xl font-bold mb-3">109</p>
             <span class="badge bg-gray-100 my-2">রেলসেবা</span>
             <div class="flex gap-2 flex-wrap">
-              <button class="btn btn-sm copyBtn" data-number="999">
+               <button class="btn btn-sm copyBtn  color w-20 hover:bg-green-800 hover:text-white " data-number="999">
                 <img src="./assets/copy.png" alt="" /> Copy
               </button>
               <button
@@ -238,13 +248,14 @@
                 data-number="999"
               >
                 <img src="./assets/call.png" alt="" />Call
+
               </button>
             </div>
           </div>
         </div>
         <!-- History Section -->
-        <div class="bg-white p-4 rounded-lg shadow">
-          <div class="flex justify-between items-center mb-3">
+        <div class="bg-white p-4 rounded-lg shadow ">
+          <div class="flex justify-between items-center mb-3 ">
             <h2 class="text-lg font-semibold">📞 Call History</h2>
             <button
               id="clearHistory"
@@ -253,7 +264,8 @@
               Clear
             </button>
           </div>
-          <div id="historyList" class="space-y-2 text-sm text-gray-700"></div>
+          <div id="historyList" class="space-y-2 text-sm text-gray-800 "></div>
+          
         </div>
       </div>
     </main>
